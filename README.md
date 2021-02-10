@@ -43,7 +43,7 @@ two-characters
 
 loss_funcs = {'Dice_Loss' : 'Dl',
               'IoU' : 'IU'}
-## Batch_size
+## Batch size
 This is the number of images in each training batch, this might be limited by your available RAM, we used 3 or 5.
 This is important to specify for the res-unet model which requires batch-size when initiating the model, less important with the 
 other two.
@@ -51,14 +51,14 @@ two-characters, its the key rather than the entry for this dictionary
 batch_size_dict = {'b3' : 3,
                    'b5' : 5}
                    
-## image type
+## Image type
 sometimes rectified images were used, other times the raw oblique images were used, and sometimes a mixture
 
 img_type = {'rect_only': 'Rt',
             'unrectified': 'Ur',
             'mixture': 'Mx'}
                    
- ## Train_set_name
+ ## Train set name
  
  There were several different training sets, or sets of images used. Sometimes for testing purposes we only trained on a single site
  other times we used all available images, and other times we just used a select number of sites, this should reflect the last re-training
